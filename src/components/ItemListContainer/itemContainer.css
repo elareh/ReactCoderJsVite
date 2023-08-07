@@ -1,0 +1,11 @@
+.itemContainer {
+    width: 40%;
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  margin: auto;
+}
