@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import Navbar from './components/navbar/navbar.jsx';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
-// import CardWidget from './components/cardEjemplo/CardEjemplo.jsx';
+import Footer from './components/footer/Footer.jsx';
 
 
 const App = () => {
@@ -12,8 +12,10 @@ const App = () => {
       <Navbar />
 
       <ItemListContainer
-        titulo="Greetings!"
+        greetings="Hola Mundo!"
       />
+
+      <Footer />
     </>
   );
 };
