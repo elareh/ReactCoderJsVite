@@ -1,13 +1,13 @@
 const products = [
-    {id: "1", name: "Iphone 12", price: 2399, category: "phones", image: "../src/assets/images/notebook.jpg"},
-    {id: "2", name: "Samsung Galaxy S21", price: 1999, category: "phones", image: "../src/assets/images/notebook.jpg"},
-    {id: "3", name: "Google Pixel 6", price: 1799, category: "phones", image: "../src/assets/images/notebook.jpg"},
-    {id: "4", name: "MacBook Pro 13", price: 3499, category: "notebooks", image: "../src/assets/images/notebook.jpg"},
-    {id: "5", name: "Dell XPS 15", price: 2799, category: "notebooks", image: "../src/assets/images/notebook.jpg"},
-    {id: "6", name: "HP Spectre x360", price: 2299, category: "notebooks", image: "../src/assets/images/notebook.jpg"},
-    {id: "7", name: "iPad Pro", price: 1699, category: "tablets", image: "../src/assets/images/notebook.jpg"},
-    {id: "8", name: "Samsung Galaxy Tab S7", price: 1499, category: "tablets", image: "../src/assets/images/notebook.jpg"},
-    {id: "9", name: "Microsoft Surface Pro 7", price: 1899, category: "tablets", image: "../src/assets/images/notebook.jpg"}
+    {id: "1", name: "Iphone 12", price: 2399, category: "phones", image: "../src/assets/images/iphone12.jpg"},
+    {id: "2", name: "Samsung Galaxy S21", price: 1999, category: "phones", image: "../src/assets/images/sgalaxy21.jpg"},
+    {id: "3", name: "Google Pixel 6", price: 1799, category: "phones", image: "../src/assets/images/gpixel6.jpg"},
+    {id: "4", name: "MacBook Pro 13", price: 3499, category: "notebooks", image: "../src/assets/images/macbookpro13.jpg"},
+    {id: "5", name: "Dell XPS 15", price: 2799, category: "notebooks", image: "../src/assets/images/dellxps13.jpg"},
+    {id: "6", name: "HP Spectre x360", price: 2299, category: "notebooks", image: "../src/assets/images/hpspectre.jpg"},
+    {id: "7", name: "iPad Pro", price: 1699, category: "tablets", image: "../src/assets/images/ipadpro.jpg"},
+    {id: "8", name: "Samsung Galaxy Tab S7", price: 1499, category: "tablets", image: "../src/assets/images/galaxytab.jpg"},
+    {id: "9", name: "Microsoft Surface Pro 7", price: 1899, category: "tablets", image: "../src/assets/images/surfacepro.jpg"}
 ]
 
 
