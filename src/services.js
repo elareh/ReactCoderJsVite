@@ -1,5 +1,5 @@
 const products = [
-    {id: "1", name: "Iphone 12", price: 2399, category: "phones", image: "/assets/images/notebook.jpg"},
+    {id: "1", name: "Iphone 12", price: 2399, category: "phones", image: "../assets/images/notebook.jpg"},
     {id: "2", name: "Samsung Galaxy S21", price: 1999, category: "phones", image: "../assets/notebook.jpg"},
     {id: "3", name: "Google Pixel 6", price: 1799, category: "phones", image: "../assets/notebook.jpg"},
     {id: "4", name: "MacBook Pro 13", price: 3499, category: "notebooks", image: "../assets/notebook.jpg"},
