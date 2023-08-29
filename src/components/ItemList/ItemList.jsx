@@ -1,7 +1,7 @@
 import React from "react";
 import propTypes from "prop-types";
 
-const ItemList = ({ list }) => {
+const ItemList = ({ items }) => {
     return (
         <div>
             <h1>ItemList</h1>
@@ -22,7 +22,7 @@ const ItemList = ({ list }) => {
 };
 
 ItemList.propTypes = {
-    list: propTypes.array.isRequired,
+    items: propTypes.array.isRequired,
 }
 
 export default ItemList;

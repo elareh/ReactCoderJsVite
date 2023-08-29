@@ -1,9 +1,9 @@
 import React from "react";
 import './itemContainer.css';
-import ItemList from "../components/ItemList/ItemList";
+import ItemList from "../ItemList/ItemList.jsx";
 
 const ItemListContainer = () => {
-    return <ItemList />;
+    return <ItemList items={[]} />;
   };
 
 export default ItemListContainer;

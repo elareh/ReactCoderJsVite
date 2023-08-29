@@ -20,10 +20,10 @@ const Navbar = () => {
           <NavLink to="/category/phones" className="nav-link active" aria-current="page" href="#">Telefonos</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/category/tablets" className="nav-link" href="#">Tablets</NavLink>
+          <NavLink to="/category/phones" className="nav-link" href="#">Categorias</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/category/notebooks" className="nav-link" href="#">Notebooks</NavLink>
+          <a className="nav-link" href="#">Contacto</a>
         </li>
       </ul>
     </div>
@@ -32,4 +32,4 @@ const Navbar = () => {
 </nav>
   )
 }
-export default Navbar
+export default Navbar;
