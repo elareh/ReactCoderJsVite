@@ -1,22 +1,22 @@
-import React from 'react';
-import './index.css';
-import Navbar from './components/navbar/navbar.jsx';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx'
-import Footer from './components/footer/Footer.jsx';
-
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar.jsx";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 const App = () => {
   return (
-
-    <>
+    <div>
       <Navbar />
 
-      <ItemListContainer
-        greetings="Hola Mundo!"
-      />
+      <div>
+      <Routes>
+        <Route path ="/" element={<ItemListContainer />} />
+        <Route path ="/category/:categoryId" element={<ItemListContainer />} />
+        <Route path ="/item/:id" element={<ItemDetailContainer />} />
 
-      <Footer />
-    </>
+      </Routes>
+      </div>
+    </div>
   );
 };
 export default App;
