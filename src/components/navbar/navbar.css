@@ -1,0 +1,24 @@
+.navbarFondo {
+    background-color: #FF1C1C;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20rem;
+    padding: 0;
+  }
+  
+.nav-item {
+    margin: 0 10px; /* Espaciado horizontal entre los elementos del menú */
+  }
+  
+  .nav-link {
+    text-align: center;
+  }
+
+  .logo-img {
+    width: 25%;
+    margin: 0;
+  }

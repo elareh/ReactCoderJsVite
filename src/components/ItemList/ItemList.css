@@ -1,0 +1,37 @@
+.image {
+    height: 200px;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+
+body {
+    background-color: black;
+}
+
+.checkout {
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    height: 100%;
+  }
+
+
+.card-custom {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+
+.card-text-custom {
+    color: black; /* Set the text color to white */
+    text-decoration: none !important;/* Remove the underline */
+}
+
+.card {
+    background-color: white;
+}
