@@ -4,11 +4,12 @@
     height: 150px; /* Maintain aspect ratio */
   }
 
-  .btn {
-    width: 20%;
+.masMenos {
+    margin-left: 1rem;
     margin-right: 1rem;
-  }
-
+    padding: 0.5rem;
+    width: 20%;
+}
 .card {
     margin-left: 2rem;
 }

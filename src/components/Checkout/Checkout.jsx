@@ -92,8 +92,8 @@ const Checkout = () => {
                     <p className="card-text">Cantidad: {item.quantity}</p>
                     <p className="card-text">Precio por unidad: ${item.price}</p>
                     <p className="card-text">Subtotal: ${item.price * item.quantity}</p>
-                    <button onClick={() => updateItemQuantity(item.id, item.quantity - 1)} className="btn btn-danger">-</button>
-                    <button onClick={() => updateItemQuantity(item.id, item.quantity + 1)} className="btn btn-danger">+</button>
+                    <button onClick={() => updateItemQuantity(item.id, item.quantity - 1)} className="btn btn-danger masMenos">-</button>
+                    <button onClick={() => updateItemQuantity(item.id, item.quantity + 1)} className="btn btn-danger masMenos">+</button>
     
                   </div>
                 </div>
