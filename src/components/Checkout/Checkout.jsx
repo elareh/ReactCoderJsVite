@@ -9,7 +9,7 @@ import "./Checkout.css";
 const Checkout = () => {
   const [orderId, setOrderId] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const { cart, clear, removeItem, updateItemQuantity } = useContext(CartContext);
+  const { cart, clear, updateItemQuantity } = useContext(CartContext);
 
   const total = getCartTotal(cart);
 
