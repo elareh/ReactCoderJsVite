@@ -10,7 +10,6 @@ const CartProvider = ({ children }) => {
   };
 
   const addItem = (product, quantity) => {
-
     const itemInCart = isInCart(product.id);
 
     if (itemInCart) {
@@ -21,7 +20,6 @@ const CartProvider = ({ children }) => {
             quantity: item.quantity + quantity,
           };
         }
-
         return item;
       });
       setCart(newCart);
@@ -31,7 +29,24 @@ const CartProvider = ({ children }) => {
     }
   };
 
- 
+  const updateItemQuantity = (id, quantity) => {
+    if (quantity > 0) {
+      const newCart = cart.map((item) => {
+        if (item.id === id) {
+          return {
+            ...item,
+            quantity: quantity,
+          };
+        }
+        return item;
+      });
+      setCart(newCart);
+    } else {
+      // Si la cantidad es 0 o menor, elimina el producto del carrito
+      const newCart = cart.filter((item) => item.id !== id);
+      setCart(newCart);
+    }
+  };
 
   const removeItem = (id) => {
     const newCart = cart.filter((item) => item.id !== id);
@@ -44,7 +59,7 @@ const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addItem, removeItem, clear, isInCart, }}
+      value={{ cart, addItem, updateItemQuantity, removeItem, clear, isInCart }}
     >
       {children}
     </CartContext.Provider>

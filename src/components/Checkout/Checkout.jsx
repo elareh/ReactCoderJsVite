@@ -5,10 +5,11 @@ import { getCartTotal, mapCartToOrderItems } from "../../utils.js";
 import { createOrder } from "../../services.js";
 import "./Checkout.css";
 
+
 const Checkout = () => {
   const [orderId, setOrderId] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const { cart, clear } = useContext(CartContext);
+  const { cart, clear, removeItem, updateItemQuantity } = useContext(CartContext);
 
   const total = getCartTotal(cart);
 
@@ -91,6 +92,9 @@ const Checkout = () => {
                     <p className="card-text">Cantidad: {item.quantity}</p>
                     <p className="card-text">Precio por unidad: ${item.price}</p>
                     <p className="card-text">Subtotal: ${item.price * item.quantity}</p>
+                    <button onClick={() => updateItemQuantity(item.id, item.quantity - 1)} className="btn btn-danger">-</button>
+                    <button onClick={() => updateItemQuantity(item.id, item.quantity + 1)} className="btn btn-danger">+</button>
+    
                   </div>
                 </div>
               </div>
