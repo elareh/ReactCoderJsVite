@@ -1,28 +1,26 @@
 import CartWidget from "../cartWidget/cartWidget.jsx";
 import { Link, NavLink} from "react-router-dom";
+import "./Navbar.css";
 
 
 const Navbar = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div>
-          <h1>
-            <Link to="/">Ecommerce</Link>
-          </h1>
+    <div className="navbarFondo">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container-fluid">
+            <Link to="/" className="navbar logo">
+            <img src="../src/assets/images/pok-mon-go-logo-png-30.png" alt="Logo" className="logo-img" />
+            </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse nave" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink to="/category/phones" className="nav-link active" aria-current="page" href="#">Telefonos</NavLink>
+                <NavLink to="/category/Comun" className="nav-link" aria-current="page" href="#">Comunes</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/category/tablets" className="nav-link" href="#">Tablets</NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/category/notebooks" className="nav-link" href="#">Notebooks</NavLink>
+                <NavLink to="/category/Especial" className="nav-link" href="#">Especiales</NavLink>
               </li>
             </ul>
           </div>
